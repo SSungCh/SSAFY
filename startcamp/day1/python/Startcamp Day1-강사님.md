@@ -80,9 +80,11 @@
 
 image test
 
-![](.\Image\git bash download finality.PNG)
+![](.\img\git bash download finality.PNG)
 
 
+
+![](C:\Users\student\Desktop\SSAFY\startcamp\day1\python\img\git bash download finality.PNG)
 
 6. 패키지
 
