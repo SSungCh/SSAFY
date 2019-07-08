@@ -78,14 +78,6 @@
 
    
 
-image test
-
-![](.\img\git bash download finality.PNG)
-
-
-
-![](C:\Users\student\Desktop\SSAFY\startcamp\day1\python\img\git bash download finality.PNG)
-
 6. 패키지
 
    > 패키지는 반드시 설치를 필요로 한다.pip install 패키지 명
