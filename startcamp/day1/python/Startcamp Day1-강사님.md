@@ -135,4 +135,4 @@
 
 img 올려보기
 
-<img src="/img/test.png">
+![](/img/test.PNG)
