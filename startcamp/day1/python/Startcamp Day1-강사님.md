@@ -135,4 +135,4 @@
 
 img 올려보기
 
-![title](\\img\git bash download finality.PNG)
+<img src="/img/git bash download finality.png">
