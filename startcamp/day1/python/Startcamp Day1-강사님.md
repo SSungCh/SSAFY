@@ -135,4 +135,4 @@
 
 img 올려보기
 
-<img src="/img/git bash download finality.png">
+<img src="/img/test.png">
