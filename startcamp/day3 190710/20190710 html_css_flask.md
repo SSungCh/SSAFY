@@ -35,7 +35,7 @@
        ```
     
        2. `닫는태그`가 없는 경우도 있다.(self-closing tag)
-        
+      
      ```
      <img src="__"/>      
      ```
@@ -171,15 +171,97 @@ return render_template('hi.html',name=name)
 <h1>{{name}} 안녕? </h1>
 ```
 
+## Flask Template Engine - jinja2
+
+Flask는 기본적으로 Template을 만들 때 `jinja2` 언어를 사용한다. 기본 문법은 다음과 같다.
+
+1. 값 출력
+
+   ```jinja2
+   <h1> {{ name }}, 안녕? </h1>
+   ```
+
+2. 조건문
+
+   ```jinja2
+   {% if name == '용흠' %}
+   	<h1>반장님 안녕하세요.</h1>
+   {% else %}
+   	<h1>학생들 ㅎㅇ</h1>
+   {% endif %}
+   ```
+
+3. 반복문
+
+   ```jinja2
+   {% for menu in menu_list %}
+   	<li>{{ menu }}</li>
+   {% endfor %}
+   ```
+
+## Form data
+
+HTML 에서 사용자로 부터 정보를 받기 위해서는 `form` 태그를 활용한다.
+
+###  Form 태그 기본 구조
+
+```html
+<!-- templates/ping.html -->
+<form action="/pong">
+    <input type="text" name="say">
+    <input type="radio" name="gender" value="M">남자
+    <input type="radio" name="gender" value="F">여자
+    <input type="submit" value="전송">    
+</form>
+```
+
+* form 태그는 `action`속성으로 해당 폼이 전송될 url을 지정해야 한다.
+* form 태그 내에는 `input` 태그들을 정의하여, 사용자에게 받을 정보를(설문지를 만든다.) 만들어 놓는다.
+* `input`태그에는 어떤 종류의 입력을 받을지(`type`)와 어떤 변수에 담아서 보낼지(`name`) 정의한다.
 
 
 
+### Flask에서 사용자로부터 정보 받기
 
+1. 사용자가 입력할 수 있는 `form` 보내주기
 
+   ```python
+   # app.py
+   @app.route('/ping')
+   def ping():
+       return render_template('ping.html')
+   ```
 
+   ```html
+   <!-- templates/ping.html -->
+   <form action="/pong">
+       <input type="text" name="say">
+       <input type="radio" name="gender" value="M">남자
+       <input type="radio" name="gender" value="F">여자
+       <input type="submit" value="전송">    
+   </form>
+   ```
 
+2. 정보 받아서 활용하기 
 
+   ```python
+   # app.py
+   from flask import flask, render_template, request
+   
+   # ...
+   
+   @app.route('/pong')
+   def pong():
+       say=request.args.get('say')
+       return render_template('pong.html', say=say)
+   ```
 
+   ```html
+   <!-- templates/pong.html -->
+   <h1>{{ say }}!!!!</h1>
+   ```
+
+   * `request.args` 는 일종의 `dictionary`이고, `key` 는 input에 정의한 name이고 사용자가 입력한 값은 `value` 이다.
 
 
 
