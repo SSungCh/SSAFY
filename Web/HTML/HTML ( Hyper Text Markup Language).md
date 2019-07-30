@@ -50,3 +50,7 @@
 
 <a href="https://docs.emmet.io/cheat-sheet/">HTML 단축키에 대한 공부</a>
 
+### b 태그와 strong 태그 비교 (보이는것 같지만 태그의미가 다르다)
+
+`i` ,  `em` 이탤릭체 표현도 같음 
+

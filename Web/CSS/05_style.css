@@ -1,0 +1,23 @@
+div{
+  width: 100px;
+  height: 100px;
+  background-color: #aabb33;
+  text-align: center;
+  line-height: 100px;
+}
+
+.ml-auto{
+  margin-left: auto;
+}
+
+.mr-auto{
+  margin-right: auto;
+}
+
+.mx-auto{
+  margin: 0 auto;
+}
+
+.red{
+  color: red;
+}
