@@ -205,3 +205,25 @@ css 는 styling의 정의
 * `float` : 구름처럼 떠있음
 * `float: left` 왼쪽에 추가
 * `clear` : float 값을 취소 한다.
+
+
+
+
+
+### 9. [09_background.html](09_background.html)
+
+- block 요소는 높이를 지정하지않으면 높이가 없다.
+- `background-size: cover`  또는 cover 대신 `px px`로 지정할 수 있다.
+- `px px`로 하면 남은영역은 바둑판형식으로 채워진다.
+- `background-repeat: no-repeat` 반복형식이 제거된다.
+
+
+
+
+
+### 10. [10_font.html](10_font.html)
+
+- `font-family`를 사용하여 글시체를 지정할 수 있다. 1번째 폰트가 없으면 , 2번째 ...
+- `font-weight`를 사용하여 두깨를 조정할 수 있다.
+- `font-style`을 사용하여  설정할 수 있다.
+- `google web font` : link를 가져와서 font-family 설정을 한다.
