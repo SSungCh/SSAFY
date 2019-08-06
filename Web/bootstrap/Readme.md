@@ -106,3 +106,83 @@ Where *value* is one of:
 ### 7. [07_components.html](./07_components.html)
 
 [Components](https://getbootstrap.com/docs/4.3/components/alerts/)
+
+
+
+
+
+## grid system
+
+> explorer 11 부터 적용 : powerfull 하게 배치를 도와줄수 있기 떄문이다.
+>
+> 어떠한 영역을 등분해서 배치를 하겠다.
+
+|                     | Extra small <576px                   | Small ≥576px | Medium ≥768px | Large ≥992px | Extra large ≥1200px |
+| ------------------- | ------------------------------------ | ------------ | ------------- | ------------ | ------------------- |
+| Max container width | None (auto)                          | 540px        | 720px         | 960px        | 1140px              |
+| Class prefix        | `.col-`                              | `.col-sm-`   | `.col-md-`    | `.col-lg-`   | `.col-xl-`          |
+| # of columns        | 12                                   |              |               |              |                     |
+| Gutter width        | 30px (15px on each side of a column) |              |               |              |                     |
+| Nestable            | Yes                                  |              |               |              |                     |
+| Column ordering     | Yes                                  |              |               |              |                     |
+
+
+
+## 8. [08_grid.html](./08_grid.html)
+
+`container` : margin이 유동적으로 변환
+
+`fluid`: 전체 너비를 가지고 
+
+---
+
+`col` 기본은 12
+
+col 숫자의 합이 12를 넘어가게되면 자동으로 다음줄로 넘어가게 된다.
+
+
+
+#### offset
+
+`offset` 만큼 비우고 출력하겠다.
+
+`col-sm` 576 보다크면 적용
+
+
+
+## 9. [09_flex.html](./09_flex.html) [09_flex2.html](./09_flex2.html) [09_flex3.html](./09_flex3.html)
+
+## flex
+
+> 배치가 조금더 자유자제로 이뤄질 수 있음 block, inline >> x ,y
+
+
+
+
+
+`flex-grow` : 남은 여백을 나눠 가짐
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
